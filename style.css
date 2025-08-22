@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+
+:roof{
+    --roxo-principal: #340241;
+}
+
+a {
+    color: rgb(98, 180, 180);
+    text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+nav.menuSuperior {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #340241;
+    height: 10vh;
+
+}
+
+
+main{
+    
+    background: url("fundo.webp") no-repeat center center; /*colocar a imagem nessa pasta*/
+    /*background-size: cover;*/
+    /*height: 90vh;*/
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+@media (max-width: 999px){
+    body{
+        overflow: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 6vh;
+        right: 0;
+        width: 35vw;
+        height: 94vh;
+        background: #340241;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+
+    }
+
+    .mobile-menu{
+        display: block;
+
+    }
+
+    .menuLateral{
+       right: -30vh;
+       flex-direction: column;
+       margin-top: -45px;
+       transform: translateX(100%);
+       transition: transform 0.3s ease-in;
+       position: absolute;
+    }
+
+    .btnFiltros span{
+        opacity: 1;        
+    }
+
+    
+}
+
+.nav-list.active{
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+ 
+/*INICIO DO MENU LATERAL NESSA MERDAAAAAAAAAAAAAAA*/
+/**
+.menuLateral {
+    background-color: purple;
+    width: 30vh;
+    height: 100%;
+    position: fixed;
+    /*padding: 10px 20px;
+    left: -30vh;
+}
+
+.menuLateral .filtros{
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 24px;
+    border-bottom: 2px solid white;
+}
+.menuLateral ul{
+    list-style: none;
+    border-bottom: 1px solid white;
+}
+
+.menuLateral ul li{
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.menuLateral ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 20px;
+    display: block;
+    /*font-weight: bold;
+}
+
+.menuLateral ul li a:hover{
+    background: #340241;
+    transition: 0.5s;
+}
+/*SubMenus*
+.menuLateral ul ul li a{
+    font-size: 16px;
+    font-weight: 300;    
+    padding-left: 50px;
+    background: rgb(112, 1, 112);
+}
+
+.menuLateral ul ul{
+    display: none;
+}
+
+.menuLateral ul .itensCategoria.mostra{
+    display: block;
+}
+
+.menuLateral ul .itensEstilo.mostra{
+    display: block;
+}
+
+.menuLateral ul .itensNivel.mostra{
+    display: block;
+}
+
+.btnFiltros{
+    margin: 10px 10px;
+    background: purple;
+    color: #fff;
+    width: 30px;
+    cursor: pointer;    
+}
+
+.btnFiltros span{
+    font-size: 30px;
+}
+
+.menuLateral.mostra{
+    left: 0;
+}
+
+.btnLimparFiltros{
+    all: unset;
+    cursor: pointer;
+    background: purple;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btnLimparFiltros a:hover{
+    background: #340241;
+    color: #fff;
+}
+
+}
+*/
+
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.menuLateral, .meio, .conteudo, .ranking{
+    border: 1px solid black;
+}
+
+.meio {
+    width: 100%;
+
+}
+
+.menuLateral, .ranking, .meio{
+    padding: 20px;
+}
+
+.menuLateral, .ranking{
+    width: 250px;
+    height: auto;
+}
+
+input {
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: #ebebeb;
+    width: 100%;
+    height: 20px;
+    padding: 10px 20px;
+}
+
+button{
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: #76158e;
+    color: white;
+    padding: 10px;
+}
+
+button a{
+    color: white;
+}
+
+#pesquisa{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#pesquisa button{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+#conteudo{
+    width: 100%;
+    height: auto;
+}
+
+.foto{
+    width: 100%;
+    height: 40%;
+}
+
+.card{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #ebebeb;
+}
+
+img{
+    border-radius: 15px;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 10px;
+}
