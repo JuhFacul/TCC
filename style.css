@@ -6,7 +6,7 @@
 
 :roof{
     --roxo-principal: #340241;
-    --cinza: #fff
+    --cinza: gray;
 }
 
 .menuSuperior a {
@@ -253,8 +253,8 @@ p{
 .menuLateral, .ranking{
     background-color: white;
     height: 200%;
-    width: 250px;
-    padding: 40px;
+    width: 25%;
+    padding: 40px 20px 40px 20px;
 }
 
 .ranking{
@@ -263,6 +263,10 @@ p{
 
 .menuLateral{
  border-radius: 0px 0px 20px 0px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
 }
 
 input {
@@ -274,15 +278,16 @@ input {
     padding: 10px 20px;
 }
 
-button{
+.meio button{
     border-radius: 20px;
     border: 1px solid transparent;
-    background-color: rgb(231, 153, 8);
+    background-color: rgb(231, 157, 8);
     color: white;
     padding: 10px;
+    cursor: pointer;
 }
 
-button a{
+.meio button a{
     color: white;
 }
 
@@ -445,22 +450,67 @@ img{
 .contemTodos{
     /* background-color: yellow; */
     margin-top: 40px;
+    align-items: center;
+    /* margin-bottom: 40px; */
+
 }
 
-.btnLimparFiltros{
+.btnLimparFiltros a{
     cursor: pointer;
+    width: auto;
+    height: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+
 }
 
-.btnLimparFiltros a:hover{
-    opacity: 50%;
+.menuLateral .btnLimparFiltros a:hover{
+    opacity: 30%;
+    color: white;
+    /* background-color: orangered; */
 }
 
-.itensCategoria {
+/* .itensCategoria {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .itensEstilo {
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .itensNivel {
-    margin-top: 10px;
+    
+}*/
+
+.menuLateral ul li ul li {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
+
+.menuLateral button{
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: rgb(231, 157, 8);
+    font-size: 20px;
+    padding: 10px;  
+
+}
+
+.btnLimparFiltros:hover{    
+    background-color: rgb(205, 84, 40);
+    color: white;
+}
+
+/* pedagogo
+
+q pedagogo - artigos de melhores formas para aprender a desenhar
+
+artigos de comparação de formas de aprender a desenhar
+anatomia e desenho
+chat gpt ;-;
+
+determinar oq cada artigo contribui para o site
+
+*/
