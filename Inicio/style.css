@@ -4,7 +4,7 @@
     font-family: verdana;
 }
 
-:roof{
+:root{
     --roxo-principal: #340241;
     --cinza: gray;
 }
@@ -24,6 +24,7 @@ a:hover{
 
 body{
     background-color: #d5e1ec;
+    
 }
 
 .logo {
@@ -39,7 +40,9 @@ nav.menuSuperior {
     align-items: center;
     background: #340241;
     height: 10vh;
-
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
 }
 
 
@@ -48,6 +51,7 @@ main{
     background: url("fundo.webp") no-repeat center center; /*colocar a imagem nessa pasta*/
     /*background-size: cover;*/
     /*height: 90vh;*/
+     padding-top: 10vh;
 }
 
 .nav-list{
@@ -295,12 +299,14 @@ input {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
+    border-color: #340241;
+
 }
 
 #pesquisa button{
     width: 50px;
     height: 50px;
-    border-radius: 100%;
+    border-radius: 50%;
 }
 
 #destaque{
@@ -412,6 +418,7 @@ img{
     letter-spacing: 3;
     font-style: bold;
     align-content: center;
+    margin-left: 20%;
 
 }
 
@@ -455,19 +462,19 @@ img{
 
 }
 
-.btnLimparFiltros a{
+.btnLimparFiltros {
     cursor: pointer;
-    width: auto;
+    width: 200px;
     height: 45px;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-    color: black;
+    color:#340241;
 
 }
 
 .menuLateral .btnLimparFiltros a:hover{
-    opacity: 30%;
-    color: white;
+    /* opacity: 20%; */
+    color:white;
     /* background-color: orangered; */
 }
 
@@ -499,7 +506,7 @@ img{
 }
 
 .btnLimparFiltros:hover{    
-    background-color: rgb(205, 84, 40);
+    background-color: rgba(148, 74, 5, 0.815);
     color: white;
 }
 
@@ -514,3 +521,24 @@ chat gpt ;-;
 determinar oq cada artigo contribui para o site
 
 */
+
+.descrição{
+    display: flex;
+    gap: 20px;
+}
+
+.curtir {
+    background-color: #340241;
+    width: 250px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.comentar{
+    background-color: #340241;
+    width: 250px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+}

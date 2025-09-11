@@ -1,0 +1,564 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: verdana;
+}
+
+:root{
+    --roxo-principal: #340241;
+    --cinza: gray;
+}
+
+.menuSuperior a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:hover{
+    opacity: 0.7;
+}
+
+body{
+    background-color: #d5e1ec;
+    
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+}
+
+nav.menuSuperior {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #340241;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+
+main{
+    
+    background: url("fundo.webp") no-repeat center center; /*colocar a imagem nessa pasta*/
+    /*background-size: cover;*/
+    /*height: 90vh;*/
+     padding-top: 10vh;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+}
+
+@media (max-width: 999px){
+    body{
+        overflow: hidden;
+    }
+    .nav-list{
+        position: absolute;
+        top: 6vh;
+        right: 0;
+        width: 35vw;
+        height: 94vh;
+        background: #340241;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+
+    }
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+
+    }
+
+    .mobile-menu{
+        display: block;
+
+    }
+
+    .btnFiltros span{
+        opacity: 1;        
+    }
+
+    
+}
+
+.nav-list.active{
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+ 
+/*INICIO DO MENU LATERAL NESSA MERDAAAAAAAAAAAAAAA*/
+/**
+.menuLateral {
+    background-color: purple;
+    width: 30vh;
+    height: 100%;
+    position: fixed;
+    /*padding: 10px 20px;
+    left: -30vh;
+}
+
+.menuLateral .filtros{
+    color: yellow;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    font-size: 24px;
+    border-bottom: 2px solid white;
+}
+.menuLateral ul{
+    list-style: none;
+    border-bottom: 1px solid white;
+}
+
+.menuLateral ul li{
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.menuLateral ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding-left: 20px;
+    display: block;
+    /*font-weight: bold;
+}
+
+.menuLateral ul li a:hover{
+    background: #340241;
+    transition: 0.5s;
+}
+/*SubMenus*
+.menuLateral ul ul li a{
+    font-size: 16px;
+    font-weight: 300;    
+    padding-left: 50px;
+    background: rgb(112, 1, 112);
+}
+
+.menuLateral ul ul{
+    display: none;
+}
+
+.menuLateral ul .itensCategoria.mostra{
+    display: block;
+}
+
+.menuLateral ul .itensEstilo.mostra{
+    display: block;
+}
+
+.menuLateral ul .itensNivel.mostra{
+    display: block;
+}
+
+.btnFiltros{
+    margin: 10px 10px;
+    background: purple;
+    color: #fff;
+    width: 30px;
+    cursor: pointer;    
+}
+
+.btnFiltros span{
+    font-size: 30px;
+}
+
+.menuLateral.mostra{
+    left: 0;
+}
+
+.btnLimparFiltros{
+    all: unset;
+    cursor: pointer;
+    background: purple;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btnLimparFiltros a:hover{
+    background: #340241;
+    color: #fff;
+}
+
+}
+*/
+
+
+#container{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+p{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.meio {
+    width: 100%;
+
+}
+
+.meio{
+    padding: 40px 0px 40px 0px;
+}
+
+.menuLateral, .ranking{
+    background-color: white;
+    height: 200%;
+    width: 25%;
+    padding: 40px 20px 40px 20px;
+}
+
+.ranking{
+     border-radius: 0px 0px 0px 20px;
+}
+
+.menuLateral{
+ border-radius: 0px 0px 20px 0px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+
+}
+
+input {
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: #fff;
+    width: 100%;
+    height: 20px;
+    padding: 10px 20px;
+}
+
+.meio button{
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: rgb(231, 157, 8);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.meio button a{
+    color: white;
+}
+
+#pesquisa{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    border-color: #340241;
+
+}
+
+#pesquisa button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#destaque{
+    width: 100%;
+    height: auto;
+}
+
+.foto{
+    width: 100%;
+    height: 40%;
+}
+
+.card{
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+img{
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.destaque img{
+    height: 400px;
+}
+
+.conteudo img{
+    height: 300px;
+}
+
+.conteudo{
+    display: flex;
+    gap: 10px;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+
+.conteudo .card{
+    width: 43.9%;
+}
+
+.perfil, .rankingConteudo{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.perfil-img{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    background-color: #340241;
+}
+
+.ranking .perfil .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.classificacao{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.rankingConteudo .imagem{
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    background-color: #340241;
+}
+
+.lugar{
+    font-size: 13px;
+    color: #898989;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.primeiroLugar{
+    background-color: rgb(244, 204, 0);
+    color: rgb(47, 47, 47);
+}
+
+.segundoLugar{
+    background-color: rgb(198, 198, 197);
+    color: rgb(47, 47, 47);
+}
+
+.terceiroLugar{
+    background-color: rgb(241, 141, 26);
+    color: rgb(47, 47, 47);
+}
+
+.titulosRanking{
+    font-size:20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 3;
+    font-style: bold;
+    align-content: center;
+    margin-left: 20%;
+
+}
+
+
+
+
+/*-------------------------------------------------------------------*/
+.menuLateral ul li { 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: bold;
+    /*background-color:#f5f5f5;*/
+    color: black;
+    font-size: 20px;
+}
+
+.menuLateral ul li ul li{ /*Só os itens de dentro*/
+    font-size: 15px;
+    
+}
+.menuLateral a{
+    color: #340241;
+    text-decoration: none;
+}
+
+.menuLateral ul li a:hover{
+    /* background-color: rgb(219, 217, 217); */
+    color: black;
+    opacity: 50%;
+}
+
+.menuLateral{
+    height: 100%;
+    line-height: 30px;    
+}
+
+.contemTodos{
+    /* background-color: yellow; */
+    margin-top: 40px;
+    align-items: center;
+    /* margin-bottom: 40px; */
+
+}
+
+.btnLimparFiltros {
+    cursor: pointer;
+    width: 200px;
+    height: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:#340241;
+
+}
+
+.menuLateral .btnLimparFiltros a:hover{
+    /* opacity: 20%; */
+    color:white;
+    /* background-color: orangered; */
+}
+
+/* .itensCategoria {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.itensEstilo {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.itensNivel {
+    
+}*/
+
+.menuLateral ul li ul li {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.menuLateral button{
+    border-radius: 20px;
+    border: 1px solid transparent;
+    background-color: rgb(231, 157, 8);
+    font-size: 20px;
+    padding: 10px;  
+
+}
+
+.btnLimparFiltros:hover{    
+    background-color: rgba(148, 74, 5, 0.815);
+    color: white;
+}
+
+/* pedagogo
+
+q pedagogo - artigos de melhores formas para aprender a desenhar
+
+artigos de comparação de formas de aprender a desenhar
+anatomia e desenho
+chat gpt ;-;
+
+determinar oq cada artigo contribui para o site
+
+*/
+
+.descrição{
+    display: flex;
+    gap: 20px;
+}
+
+.curtir {
+    background-color: #340241;
+    width: 250px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.comentar{
+    background-color: #340241;
+    width: 250px;
+    height: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.conteinerComentarios{
+    background-color: wheat;
+    margin-top: 50px;
+    gap: 20px;
+    height: 10vh;
+    width: 100%;
+    padding: 25px;
+    gap: 20px;
+    display: flex;
+}
+
+.comentario1{
+    font-family: 'Times New Roman', Times, serif;
+    color: #340241;
+
+
+}
+

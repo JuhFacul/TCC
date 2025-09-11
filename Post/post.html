@@ -7,7 +7,7 @@
     <!--Ícones-->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylePost.css">
 
     <!-- JQUERY (não sei o pq)-->
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
@@ -42,6 +42,11 @@
 <div id="container">
     <nav class = "menuLateral">
 
+        <!-- <div id="pesquisa">
+            <input type="text" name="text" id="pesquisa" placeholder="Pesquisar">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>  -->
+
         <button  class="btnLimparFiltros"><a href="/">Limpar Filtros</a> </button>
         <ul class="contemTodos">
             <li><a href="#" class="categoria">Categorias <span class="material-symbols-outlined">arrow_drop_down</span></a>
@@ -72,19 +77,36 @@
     </nav>
 
     <div class="meio">
-        <div id="pesquisa">
+
+      <div id="pesquisa">
             <input type="text" name="text" id="pesquisa" placeholder="Pesquisar">
             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
+        </div> 
     
         <div id="destaque">
             <div class="card">
                 <div class="imagem"><img src="https://imgs.search.brave.com/yfiMBTVAcZZOeQzhN9N89bj4OlP4mCN9kVBRD8PSaKU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Ym9yZWRwYW5kYS5j/b20vYmxvZy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8xMC84/LTY3MTI2OTQwNTdl/NmRfXzg4MC5qcGc" alt=""></div>
-                <p>Eu sou um gato burro feio</p>
+                <div class = "descrição">
+                    <p>Eu sou um gato burro feio Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi eius saepe repudiandae ullam doloribus error odit magnam quis praesentium, minima ipsa excepturi, labore cum. Architecto autem et porro temporibus quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam veniam voluptate harum voluptatibus consequuntur molestiae omnis. Consequatur error ab porro numquam cum provident eveniet ratione, culpa dignissimos deserunt, laborum alias.</p>
+                    <div class="curtir"></div>
+                    <div class="comentar"></div>
+                </div>                
             </div>
         </div>
 
-        <div class="conteudo">
+        <div class="conteinerComentarios">
+                    <div class="comentario1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae consequuntur esse incidunt reiciendis at! Impedit quibusdam saepe libero, eum temporibus asperiores aut modi amet mollitia dolores? Laborum illo enim velit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam debitis amet eveniet harum minima sequi dolore excepturi, deleniti natus praesentium earum animi explicabo voluptate in molestiae sunt culpa quia molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ducimus accusamus. Eum, sapiente beatae reiciendis quae odio molestiae facilis maxime cupiditate ullam excepturi iusto tenetur dolores nesciunt ea eos repudiandae.</p>
+                    </div>
+
+                    <div class="comentario2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae consequuntur esse incidunt reiciendis at! Impedit quibusdam saepe libero, eum temporibus asperiores aut modi amet mollitia dolores? Laborum illo enim velit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam debitis amet eveniet harum minima sequi dolore excepturi, deleniti natus praesentium earum animi explicabo voluptate in molestiae sunt culpa quia molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ducimus accusamus. Eum, sapiente beatae reiciendis quae odio molestiae facilis maxime cupiditate ullam excepturi iusto tenetur dolores nesciunt ea eos repudiandae.</p>
+                    </div>
+        </div>
+
+        
+
+        <!-- <div class="conteudo">
             <div class="card">
                 <div class="imagem"><img src="https://imgs.search.brave.com/zceQjj0sNQNXQUXcm42Oi4IZ92S0X3UbHIoBT9xi9SI/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9wMi50/cnJzZi5jb20vaW1h/Z2UvZmdldC9jZi8z/MDYvMTY4L3NtYXJ0/L2ltYWdlcy50ZXJy/YS5jb20vMjAyNS8w/OC8yMS8yMDAwNTI3/MTkxLXNodXR0ZXJz/dG9jazIzNzA2MDA5/NTctMS5qcGc"></div>
                 <p>Gatinho todo fudido com cara de cu</p>
@@ -114,11 +136,17 @@
                 <div class="imagem"><img src="https://imgs.search.brave.com/zceQjj0sNQNXQUXcm42Oi4IZ92S0X3UbHIoBT9xi9SI/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9wMi50/cnJzZi5jb20vaW1h/Z2UvZmdldC9jZi8z/MDYvMTY4L3NtYXJ0/L2ltYWdlcy50ZXJy/YS5jb20vMjAyNS8w/OC8yMS8yMDAwNTI3/MTkxLXNodXR0ZXJz/dG9jazIzNzA2MDA5/NTctMS5qcGc"></div>
                 <p>Gatinho todo fudido com cara de cu</p>
             </div>
-        </div>
+        </div> -->
 
     </div>
 
+    
     <div class="ranking">
+       <!--  <div id="pesquisa">
+            <input type="text" name="text" id="pesquisa" placeholder="Pesquisar">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div> -->
+
         <div class="perfil">
             <div class="detalhes">
                 <h3>Perfil User </h3>

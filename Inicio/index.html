@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutodidArte</title>
+    <!--Ícones-->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JQUERY (não sei o pq)-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <!--aqui começa o menu superior-->
+    <header>
+        <nav class="menuSuperior">
+            <a class="logo" href="/">AutodidArte</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="/">Página Inicial</a></li>
+                <li><a href="/">Referências</a></li>
+                <li><a href="/">Dúvidas</a></li>
+                <li><a href="/">Mural</a></li>
+                <li><a href="/">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main></main>
+    <!--<script src="codigo.js"></script>-->
+    <!--Aqui acaba o menu superior-->
+
+
+<div id="container">
+    <nav class = "menuLateral">
+
+        <!-- <div id="pesquisa">
+            <input type="text" name="text" id="pesquisa" placeholder="Pesquisar">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>  -->
+
+        <button  class="btnLimparFiltros"><a href="/">Limpar Filtros</a> </button>
+        <ul class="contemTodos">
+            <li><a href="#" class="categoria">Categorias <span class="material-symbols-outlined">arrow_drop_down</span></a>
+                <ul class="itensCategoria">
+                    <li><a href="/">Aquarela</a></li>
+                    <li><a href="/">Arquitetura</a></li>
+                    <li><a href="/">Perspectiva</a></li>
+                    <li><a href="/">Pintura</a></li>
+                    <li><a href="/">Texturas</a></li>
+                </ul>            
+            </li>
+            <li><a href="/" class="estilo">Estilo<span class="material-symbols-outlined">arrow_drop_down</span></a>
+                <ul class="itensEstilo">
+                    <li><a href="/Post/post.html">Cartoon</a></li>
+                    <li><a href="/">Mangá/Anime</a></li>
+                    <li><a href="/">Realismo</a></li>
+                </ul>
+            </li>
+            <li><a href="/" class="nivel">Nível<span class="material-symbols-outlined">arrow_drop_down</span></a>
+                <ul class="itensNivel">
+                    <li><a href="/">Básico</a></li>
+                    <li><a href="/">Intermediário</a></li>
+                    <li><a href="/">Avançado</a></li>
+                    <li><a href="/">Profissional</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="meio">
+
+      <div id="pesquisa">
+            <input type="text" name="text" id="pesquisa" placeholder="Pesquisar">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div> 
+    
+        <div id="destaque">
+            <div class="card">
+                <div class="imagem"><img src="https://imgs.search.brave.com/yfiMBTVAcZZOeQzhN9N89bj4OlP4mCN9kVBRD8PSaKU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Ym9yZWRwYW5kYS5j/b20vYmxvZy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNC8xMC84/LTY3MTI2OTQwNTdl/NmRfXzg4MC5qcGc" alt=""></div>
+                <div class = "descrição">
+                    <p>Eu sou um gato burro feio Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi eius saepe repudiandae ullam doloribus error odit magnam quis praesentium, minima ipsa excepturi, labore cum. Architecto autem et porro temporibus quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam veniam voluptate harum voluptatibus consequuntur molestiae omnis. Consequatur error ab porro numquam cum provident eveniet ratione, culpa dignissimos deserunt, laborum alias.</p>
+                    <div class="curtir"></div>
+                    <div class="comentar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteudo">
+            <div class="card">
+                <div class="imagem"><img src="https://imgs.search.brave.com/zceQjj0sNQNXQUXcm42Oi4IZ92S0X3UbHIoBT9xi9SI/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9wMi50/cnJzZi5jb20vaW1h/Z2UvZmdldC9jZi8z/MDYvMTY4L3NtYXJ0/L2ltYWdlcy50ZXJy/YS5jb20vMjAyNS8w/OC8yMS8yMDAwNTI3/MTkxLXNodXR0ZXJz/dG9jazIzNzA2MDA5/NTctMS5qcGc"></div>
+                <p>Gatinho todo fudido com cara de cu</p>
+            </div>
+    
+            <div class="card">
+                <div class="imagem"><img src="https://imgs.search.brave.com/zceQjj0sNQNXQUXcm42Oi4IZ92S0X3UbHIoBT9xi9SI/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9wMi50/cnJzZi5jb20vaW1h/Z2UvZmdldC9jZi8z/MDYvMTY4L3NtYXJ0/L2ltYWdlcy50ZXJy/YS5jb20vMjAyNS8w/OC8yMS8yMDAwNTI3/MTkxLXNodXR0ZXJz/dG9jazIzNzA2MDA5/NTctMS5qcGc"></div>
+                <p>Gatinho todo fudido com cara de cu</p>
+            </div>
+
+            <div class="card">
+                <div class="imagem"><img src="https://imgs.search.brave.com/zceQjj0sNQNXQUXcm42Oi4IZ92S0X3UbHIoBT9xi9SI/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9wMi50/cnJzZi5jb20vaW1h/Z2UvZmdldC9jZi8z/MDYvMTY4L3NtYXJ0/L2ltYWdlcy50ZXJy/YS5jb20vMjAyNS8w/OC8yMS8yMDAwNTI3/MTkxLXNodXR0ZXJz/dG9jazIzNzA2MDA5/NTctMS5qcGc"></div>
+                <p>Gatinho todo fudido com cara de cu</p>
+            </div>
+
+            <div class="card">
+                <div class="imagem"><img src="https://imgs.search.brave.com/zceQjj0sNQNXQUXcm42Oi4IZ92S0X3UbHIoBT9xi9SI/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9wMi50/cnJzZi5jb20vaW1h/Z2UvZmdldC9jZi8z/MDYvMTY4L3NtYXJ0/L2ltYWdlcy50ZXJy/YS5jb20vMjAyNS8w/OC8yMS8yMDAwNTI3/MTkxLXNodXR0ZXJz/dG9jazIzNzA2MDA5/NTctMS5qcGc"></div>
+                <p>Gatinho todo fudido com cara de cu</p>
+            </div>
+
+            <div class="card">
+                <div class="imagem"><img src="https://imgs.search.brave.com/zceQjj0sNQNXQUXcm42Oi4IZ92S0X3UbHIoBT9xi9SI/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9wMi50/cnJzZi5jb20vaW1h/Z2UvZmdldC9jZi8z/MDYvMTY4L3NtYXJ0/L2ltYWdlcy50ZXJy/YS5jb20vMjAyNS8w/OC8yMS8yMDAwNTI3/MTkxLXNodXR0ZXJz/dG9jazIzNzA2MDA5/NTctMS5qcGc"></div>
+                <p>Gatinho todo fudido com cara de cu</p>
+            </div>
+
+            <div class="card">
+                <div class="imagem"><img src="https://imgs.search.brave.com/zceQjj0sNQNXQUXcm42Oi4IZ92S0X3UbHIoBT9xi9SI/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9wMi50/cnJzZi5jb20vaW1h/Z2UvZmdldC9jZi8z/MDYvMTY4L3NtYXJ0/L2ltYWdlcy50ZXJy/YS5jb20vMjAyNS8w/OC8yMS8yMDAwNTI3/MTkxLXNodXR0ZXJz/dG9jazIzNzA2MDA5/NTctMS5qcGc"></div>
+                <p>Gatinho todo fudido com cara de cu</p>
+            </div>
+        </div>
+
+    </div>
+
+    
+    <div class="ranking">
+       <!--  <div id="pesquisa">
+            <input type="text" name="text" id="pesquisa" placeholder="Pesquisar">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div> -->
+
+        <div class="perfil">
+            <div class="detalhes">
+                <h3>Perfil User </h3>
+                <p>Nível 0</p>
+            </div>
+            <div class="perfil-img"></div>
+        </div>  
+
+        <div class="classificacao">
+            <p class ="titulosRanking">Categorias</p>
+            <div class="rankingConteudo">
+                <h3 class="lugar primeiroLugar">1º</h3>
+                <div class="imagem"></div>
+                <div class="detalhes">
+                    <h3>Perfil</h3>
+                    <p>Nível 0</p>
+                </div>
+            </div>
+    
+            <div class="rankingConteudo">
+                <h3 class="lugar segundoLugar">2º</h3>
+                <div class="imagem"></div>
+                <div class="detalhes">
+                    <h3>Perfil</h3>
+                    <p>Nível 0</p>
+                </div>
+            </div>
+    
+            <div class="rankingConteudo">
+                <h3 class="lugar terceiroLugar">3º</h3>
+                <div class="imagem"></div>
+                <div class="detalhes">
+                    <h3>Perfil</h3>
+                    <p>Nível 0</p>
+                </div>
+            </div>
+
+            <div class="rankingConteudo">
+                <h3 class="lugar">4º</h3>
+                <div class="imagem"></div>
+                <div class="detalhes">
+                    <h3>Perfil</h3>
+                    <p>Nível 0</p>
+                </div>
+            </div>
+
+            <div class="rankingConteudo">
+                <h3 class="lugar">5º</h3>
+                <div class="imagem"></div>
+                <div class="detalhes">
+                    <h3>Perfil </h3>
+                    <p>Nível 0</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--
+        <div class="classificacao">
+            <p class ="titulosRanking">Classificação</p>
+            <div class="rankingConteudo">
+                <h3 class="lugar primeiroLugar">1º</h3>
+                <div class="imagem"></div>
+                <div class="detalhes">
+                    <h3>JõaoPedro612</h3>
+                    <p>Intermediário</p>
+                </div>
+            </div>
+    
+            <div class="rankingConteudo">
+                <h3 class="lugar segundoLugar">2º</h3>
+                <div class="imagem"></div>
+                <div class="detalhes">
+                    <h3>MariaClarinha</h3>
+                    <p>Iniciante</p>
+                </div>
+            </div>
+    
+            <div class="rankingConteudo">
+                <h3 class="lugar terceiroLugar">3º</h3>
+                <div class="imagem"></div>
+                <div class="detalhes">
+                    <h3>FariaLima_7</h3>
+                    <p>Avançado</p>
+                </div>
+            </div>
+
+            <div class="rankingConteudo">
+                <h3 class="lugar">4º</h3>
+                <div class="imagem"></div>
+                <div class="detalhes">
+                    <h3>Marceline_gotica55</h3>
+                    <p>Básico</p>
+                </div>
+            </div>
+        </div>
+        -->
+
+
+         <div class="classificacao">
+            <p class ="titulosRanking">Estilo</p>
+            <div class="rankingConteudo">
+                <h3 class="lugar primeiroLugar">1º</h3>
+                <div class="imagem"></div>
+                <div class="detalhes">
+                    <h3>Perfil 1</h3>
+                    <p>Nível 0</p>
+                </div>
+            </div>
+    
+            <div class="rankingConteudo">
+                <h3 class="lugar segundoLugar">2º</h3>
+                <div class="imagem"></div>
+                <div class="detalhes">
+                    <h3>Perfil 2</h3>
+                    <p>Nível 0</p>
+                </div>
+            </div>
+    
+            <div class="rankingConteudo">
+                <h3 class="lugar terceiroLugar">3º</h3>
+                <div class="imagem"></div>
+                <div class="detalhes">
+                    <h3>Perfi3</h3>
+                    <p>Nível 0</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>  
+
+    </div>
+
+</div>
+
+    <script src="codigo.js"></script>
+
+</body>
+</html>
